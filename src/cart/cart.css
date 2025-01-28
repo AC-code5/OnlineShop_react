@@ -1,0 +1,11 @@
+.cart_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: rgb(255, 153, 153);
+}
+
+.cart_container {
+  background: rgb(215, 255, 252);
+  height: 850px;
+}

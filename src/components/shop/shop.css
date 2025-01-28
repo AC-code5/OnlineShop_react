@@ -1,0 +1,46 @@
+.title_shop {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: red;
+}
+
+.shop_wrapper {
+  display: flex;
+  background: rgb(238, 253, 255);
+}
+
+.product_wrapper {
+  width: 100%;
+}
+
+.img_wrapper {
+  width: 100%;
+}
+
+.product_title {
+  font-family: serif;
+  color: black;
+}
+
+.product_price {
+  font-weight: 200;
+  font-family: monospace;
+}
+
+.product_btn_plus {
+  width: 25px;
+  height: 20px;
+  color: white;
+  background-color: aquamarine;
+  border-style: none;
+  margin-right: 5px;
+}
+
+.product_btn_minez {
+  width: 25px;
+  height: 20px;
+  color: white;
+  background-color: red;
+  border-style: none;
+  margin-left: 5px;
+}
