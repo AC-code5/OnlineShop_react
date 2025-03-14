@@ -149,7 +149,9 @@
     gap: 12px;
     padding: 10px 0;
   }
-
+  .nav_header {
+    gap: 0px;
+  }
   .logo_wrapper {
     width: 120px;
   }
@@ -196,6 +198,9 @@
     width: 100px;
   }
 
+  .search_box {
+    width: 206px;
+  }
   .search_input {
     font-size: 0.85rem;
     padding: 6px 10px;
@@ -209,6 +214,10 @@
   .nav_link {
     font-size: 0.85rem;
     padding: 5px 10px;
+  }
+
+  .nav_ul {
+    gap: 1px;
   }
 
   .nav_cart_count {
@@ -227,6 +236,13 @@
     width: 90px;
   }
 
+  .nav_ul {
+    gap: 0px;
+  }
+  .search_box {
+    width: 54px;
+    font-size: 7px;
+  }
   .search_input {
     font-size: 0.8rem;
     padding: 5px 8px;
