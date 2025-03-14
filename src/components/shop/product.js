@@ -9,6 +9,7 @@ const Product = (props) => {
       <img className="img_wrapper" src={props.data.productImg} />
       <h4 className="product_title">{props.data.productName}</h4>
       <p className="product_price"> price: {props.data.price}$</p>
+
       <button
         className="product_btn_plus"
         onClick={() => addToCart(props.data.id)}
@@ -18,6 +19,7 @@ const Product = (props) => {
       <span>
         {cartItems?.filter((row) => row.id === props.data.id)[0]?.count}
       </span>
+
       {isInCart && (
         <button
           className="product_btn_minez"
@@ -31,3 +33,11 @@ const Product = (props) => {
 };
 
 export default Product;
+// {isInCart && (
+//   <button
+//     className="product_btn_minez"
+//     onClick={() => removeFromCart(props.data.id)}
+//   >
+//     -
+//   </button>
+// )}

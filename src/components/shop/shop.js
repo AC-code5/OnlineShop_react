@@ -5,14 +5,14 @@ import Product from "./product";
 
 const Shop = () => {
   return (
-    <React.Fragment>
-      <h1 className="title_shop"> This shop </h1>
+    <div className="shop_container">
+      <h1 className="title_shop">Our Products</h1>
       <div className="shop_wrapper">
-        {PRODUCTS.map((productdata) => {
-          return <Product key={productdata.id} data={productdata} />;
-        })}
+        {PRODUCTS.map((productdata) => (
+          <Product key={productdata.id} data={productdata} />
+        ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
