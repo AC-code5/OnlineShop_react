@@ -226,6 +226,138 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .nav_wrapper {
+    gap: 8px;
+    padding: 6px 0;
+  }
+
+  .logo_wrapper {
+    width: 90px;
+  }
+
+  .nav_ul {
+    gap: 0px;
+  }
+  .search_box {
+    width: 129px;
+    font-size: 14px;
+  }
+  .search_input {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .nav_link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .nav_cart_count {
+    font-size: 0.65rem;
+    padding: 0 3px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav_wrapper {
+    gap: 8px;
+    padding: 6px 0;
+  }
+
+  .logo_wrapper {
+    width: 90px;
+  }
+
+  .nav_ul {
+    gap: 0px;
+  }
+  .search_box {
+    width: 103px;
+    font-size: 14px;
+  }
+  .search_input {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .nav_link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .nav_cart_count {
+    font-size: 0.65rem;
+    padding: 0 3px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .nav_wrapper {
+    gap: 8px;
+    padding: 6px 0;
+  }
+
+  .logo_wrapper {
+    width: 90px;
+  }
+
+  .nav_ul {
+    gap: 0px;
+  }
+  .search_box {
+    width: 90px;
+    font-size: 14px;
+  }
+  .search_input {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .nav_link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .nav_cart_count {
+    font-size: 0.65rem;
+    padding: 0 3px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nav_wrapper {
+    gap: 8px;
+    padding: 6px 0;
+  }
+
+  .logo_wrapper {
+    width: 90px;
+  }
+
+  .nav_ul {
+    gap: 0px;
+  }
+  .search_box {
+    width: 45px;
+    font-size: 14px;
+  }
+  .search_input {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .nav_link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .nav_cart_count {
+    font-size: 0.65rem;
+    padding: 0 3px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .nav_wrapper {
     gap: 8px;
@@ -241,6 +373,39 @@
   }
   .search_box {
     width: 54px;
+    font-size: 7px;
+  }
+  .search_input {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .nav_link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .nav_cart_count {
+    font-size: 0.65rem;
+    padding: 0 3px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .nav_wrapper {
+    gap: 8px;
+    padding: 6px 0;
+  }
+
+  .logo_wrapper {
+    width: 90px;
+  }
+
+  .nav_ul {
+    gap: 0px;
+  }
+  .search_box {
+    width: 30px;
     font-size: 7px;
   }
   .search_input {
