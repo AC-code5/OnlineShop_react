@@ -3,6 +3,7 @@ import { PRODUCTS } from "../data/products";
 import { ShopContext } from "../context/shopContext";
 import Product from "../components/shop/product";
 import "../cart/cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems } = useContext(ShopContext);
@@ -33,6 +34,9 @@ const Cart = () => {
           <div className="cart_total">
             <h2>Total Price: ${calculateTotal()}</h2>
           </div>
+          <Link className="btn-link_shop" to="/shop">
+            Go To Shop
+          </Link>
         </div>
       </div>
     </React.Fragment>

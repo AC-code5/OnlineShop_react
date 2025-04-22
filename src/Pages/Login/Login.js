@@ -3,23 +3,26 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
+  const navigate = useNavigate();
+
   const schema = yup.object().shape({
     name: yup
       .string()
-      .min(4, "حداقل کاراکتر نام باید4 باشد")
-      .max(16, "حداکثر کاراکتر باید 16 باشد")
-      .required(" ورودی نام اجباری است"),
+      .min(4, "The name must be at least 4 characters long")
+      .max(16, "Maximum characters must be 16")
+      .required("Name input is required"),
     email: yup
       .string()
-      .email("ایمیل خود را درست وارد کنید")
-      .required(" ورودی ایمیل اجباریست"),
+      .email("Please enter your email correctly.")
+      .required("Email input is required"),
     password: yup
       .string()
-      .min(4, "حداقل کاراکتر رمز عبور باید4 باشد")
-      .max(15, "حداکثر کاراکتر  باید 15 باشد")
-      .required(" ورودی رمز عبور اجباری است"),
+      .min(4, "The minimum password character must be 4")
+      .max(15, "The minimum password character must be 15")
+      .required(" Password input is required"),
   });
 
   const {
@@ -31,7 +34,7 @@ export const Login = () => {
   });
 
   const successNotif = () => {
-    toast.success("ثبت نام انجام شد ", {
+    toast.success("Registration completed", {
       duration: 4000,
       position: "top-center",
     });
@@ -40,6 +43,9 @@ export const Login = () => {
   const onSubmitForm = (data) => {
     console.log(data);
     successNotif();
+    setTimeout(() => {
+      navigate("/");
+    }, 1500);
   };
 
   return (
@@ -74,7 +80,6 @@ export const Login = () => {
         </div>
 
         <div>
-          
           <input
             className={styles.input}
             type="password"

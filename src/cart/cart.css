@@ -31,3 +31,15 @@
   font-family: Arial, sans-serif;
   margin: 0;
 }
+
+.btn-link_shop {
+  display: block;
+  width: 136px;
+  height: 25px;
+  color: #f8f9fa;
+  /* background-color: rgb(207, 34, 34); */
+  background-color: #43769f;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: 18px;
+}
